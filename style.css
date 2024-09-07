@@ -1,0 +1,36 @@
+:root {
+  --color-red: #f04832;
+  --color-yellow: #ffc108;
+  --color-blue: #3a88fc;
+  --color-green: #2bad50;
+}
+
+.bg-blur-white {
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5.9px);
+  -webkit-backdrop-filter: blur(5.9px);
+}
+
+.google-gradient {
+  background: rgb(240, 72, 50);
+  background: linear-gradient(
+    63deg,
+    rgba(240, 72, 50, 0.15) 0%,
+    rgba(58, 136, 252, 0.15) 17%,
+    rgba(0, 0, 0, 0) 50%,
+    rgba(255, 193, 8, 0.15) 83%,
+    rgba(43, 173, 80, 0.15) 100%
+  );
+}
+
+/* #title {
+   color: transparent;
+   background: linear-gradient(
+    220deg,
+    var(--color-red) 24%,
+    var(--color-yellow) 25%, var(--color-yellow) 49%,
+    var(--color-green) 50%, var(--color-green) 74%,
+    var(--color-blue) 75%, var(--color-blue) 100%
+   );
+   -webkit-background-clip: text;
+} */

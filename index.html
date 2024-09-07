@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="assets/Favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        colorRed: '#f04832',
+                        colorYellow: '#ffc108',
+                        colorBlue: '#3a88fc',
+                        colorGreen: '#2bad50'
+                    },
+                    screens: {
+                        'xs': { 'max': '400px' },
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="bg-white h-auto px-4 md:px-8 py-6 sm:py-8 lg:py-12"
+        style="background-image: url(assets/googlebg.webp);">
+        <div class="max-w-screen-sm bg-white rounded-3xl mx-auto p-4 border">
+            <div class="mb-4 flex items-center justify-between gap-8 sm:mb-8 md:mb-12">
+                <div class="flex items-center gap-12">
+                    <h2 class="text-2xl font-bold lg:text-3xl" id="title">Qurtifa</h2>
+                </div>
+
+                <a href="#"
+                    class="inline-block rounded-3xl border bg-white outline-none ring-indigo-300 transition duration-100 hover:bg-gray-100 focus-visible:ring active:bg-gray-200">
+                   <img src="assets/Icon-nobg.png" alt="qurtifa's logo" class="h-10 w-10">
+                </a>
+            </div>
+
+            <div class="grid grid-cols-4 gap-5">
+                <!-- image - TOP -->
+                <a href="#"
+                    class="group relative flex h-48 items-end overflow-hidden rounded-3xl bg-gray-100 shadow-lg md:h-56 col-span-4">
+                    <img src="https://www.qurtifa.my.id/assets/sec-photo.jpg" loading="lazy" alt="Photo by Minh Pham"
+                        class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+
+                    <div
+                        class="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50">
+                    </div>
+                </a>
+
+                <!-- image - Both -->
+                <a href="#"
+                    class="group relative flex h-48 items-end overflow-hidden rounded-3xl shadow-lg col-span-2 border"
+                    style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(5.9px); -webkit-backdrop-filter: blur(5.9px);">
+                    <img src="assets/slemanmaps2.png" loading="lazy" alt="Photo by Magicle"
+                        class="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+                    <span
+                        class="relative mb-3 ml-3 inline-block text-xl xs:text-base md:text-xl px-2 py-1 rounded-xl bg-blur-white text-gray-800"
+                        style="background: rgba(255, 255, 255, 0.80); backdrop-filter: blur(5.9px); -webkit-backdrop-filter: blur(5.9px);">Sleman,
+                        IDN</span>
+                </a>
+
+                <a href="#"
+                    class="group relative flex h-48 items-end overflow-hidden rounded-3xl shadow-lg col-span-2 border google-gradient">
+                    <!-- Elemen untuk menampilkan jam -->
+                    <div id="clock"
+                        class="absolute inset-0 flex justify-center items-center xs:text-3xl text-4xl md:text-6xl font-bold text-black">
+                        <!-- Jam akan diupdate dengan JavaScript -->
+                    </div>
+
+                    <span
+                        class="relative mb-3 ml-3 inline-block text-xl xs:text-base md:text-xl px-2 py-1 rounded-xl bg-gray-200 text-gray-800"
+                        style="background: rgba(255, 255, 255, 0.80); backdrop-filter: blur(5.9px); -webkit-backdrop-filter: blur(5.9px);">GMT
+                        +7 Jakarta</span>
+                </a>
+
+                <a href="https://qurtifa.my.id"
+                    class="group relative flex h-16 items-center justify-center overflow-hidden rounded-3xl bg-white border shadow-xl col-span-4 hover:shadow-md hover:shadow-colorBlue *:hover:text-colorBlue">
+                    <img src="" alt="">
+                    <p class="text-gray-800 text-xl md:text-2xl font-medium">Personal Website</p>
+                </a>
+
+                <a href="https://www.instagram.com/mamat_qurtifa"
+                    class="group relative flex h-16 items-center justify-center overflow-hidden rounded-3xl bg-white border shadow-xl col-span-4 hover:shadow-md hover:shadow-colorGreen *:hover:text-colorGreen">
+                    <img src="" alt="">
+                    <p class="text-gray-800 text-xl md:text-2xl font-medium">Instagram</p>
+                </a>
+
+                <a href="https://www.linkedin.com/in/mamatqurtifa"
+                    class="group relative flex h-16 items-center justify-center overflow-hidden rounded-3xl bg-white border shadow-xl col-span-4 hover:shadow-md hover:shadow-colorYellow *:hover:text-colorYellow">
+                    <img src="" alt="">
+                    <p class="text-gray-800 text-xl md:text-2xl font-medium">linkedIn</p>
+                </a>
+
+                <a href="https://github.com/mamatqurtifa"
+                    class="group relative flex h-16 items-center justify-center overflow-hidden rounded-3xl bg-white border shadow-xl col-span-4 hover:shadow-md hover:shadow-colorRed *:hover:text-colorRed">
+                    <img src="" alt="">
+                    <p class="text-gray-800 text-xl md:text-2xl font-medium">GitHub</p>
+                </a>
+
+                <iframe style="border-radius:12px"
+                    src="https://open.spotify.com/embed/track/54XqJ3fP3GxmUejMsKwCaK?utm_source=generator&theme=0"
+                    width="100%" height="352" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"
+                    class="group relative flex items-end overflow-hidden rounded-3xl shadow-lg max-h-[9.5rem] col-span-4"></iframe>
+                <!-- image - end -->
+
+                <div class="group relative flex h-16 items-center justify-center overflow-hidden border-t-2 col-span-4">
+                   <p class="text-gray-800 text-lg xs:text-sm">© 2024 Muhammad Qurtifa Wijaya. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
